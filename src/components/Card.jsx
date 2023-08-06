@@ -1,4 +1,4 @@
-import React from "react"
+// import React from "react"
 
 export default function Card(props) {
     return (
@@ -6,13 +6,13 @@ export default function Card(props) {
             <img src={`../images/${props.item.imageUrl}`} className="card--image" />
             <div className="card--stats">
                 <img src="" className="card--star" />
-                <span className="gray">{props.item.location}</span>
+                <span className="card--location">{props.item.location}</span>
+                {/* <a className="card--url" href={url}>{props.item.googleMapsUrl}</a> */}
                 <h1 className="card--title">{props.item.title}</h1> 
-                <span className="gray">{props.item.startDate}</span>
-                <span className="gray">{props.item.endDate}</span>
-                <p className="gray">{props.item.description}</p>
+                <span className="card--date">{props.item.startDate}</span>
+                <span className="card--date">{props.item.endDate}</span>
+                <p className="card--description">{props.item.description}</p>
             </div>
-            
         </div>
     )
 }
