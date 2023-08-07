@@ -1,9 +1,16 @@
 #root {
-  max-width: 550px;
+  width: 550px;
   margin: 0 auto; /*This centers the design*/
-  padding: 1rem;
+  padding: 5rem;
   /* text-align: center; */
 }
+
+p {
+  font-size: .7rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
 /* 
 .logo {
   height: 6em;
@@ -44,6 +51,7 @@
   /* padding: 1rem; */
   background-color: #F55A5A;
   max-height: 55px;
+  border-radius: 5px 5px 0 0;
   /* box-shadow: 0 0 1em #00000022; */
 }
 
@@ -55,6 +63,8 @@
   padding: 1rem;
   background-color: #313131;
   max-height: 704px;
+  padding-top: 2rem;
+  border-radius: 0 0 5px 5px;
   /* box-shadow: 0 0 1em #00000022; */
 }
 
@@ -63,4 +73,36 @@
   height: 168px;
   object-fit: cover;
   border-radius: 8px;
+  margin-right: 1.5rem;
+}
+
+.card--stats {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  max-width: 326px;
+  margin-top: 0.5rem;
+}
+
+.card--location {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.card--title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+}
+
+.card--date {
+  font-size: 0.7rem;
+  color: #ffa5a5;
+  margin-bottom: 1rem;
+}
+
+.card--description {
+  /* margin: 0 auto; */
+  font-size: .6rem;
 }
