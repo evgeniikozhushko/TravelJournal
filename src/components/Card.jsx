@@ -1,17 +1,16 @@
 // import React from "react"
 
 export default function Card(props) {
-    let date = `${props.item.startDate} - ${props.item.endDate}`; // Fixed the date formatting
+    let date = `${props.item.startDate} -  ${props.item.endDate}`
     return (
-        <div className="main--container">
-            <img src={`../images/${props.item.imageUrl}`} className="card--image" alt="Card Image" />
+        <div className={`main--container ${props.isLast ? 'last-main-container' : ''}`}>
+            <img src={`../images/${props.item.imageUrl}`} className="card--image" />
             <div className="card--stats">
-                <img src="" className="card--star" alt="Star Icon" />
+                <img src="" className="card--star" />
                 <span className="card--location">{props.item.location}</span>
-                <a className="card--url" href={date}>View on Google Maps</a>
+                <a className="card--url" href={props.item.googleMapsUrl}>View on Google Maps</a>
                 <h1 className="card--title">{props.item.title}</h1> 
-                <span className="card--date">{props.item.startDate}</span>
-                <span className="card--date">{props.item.endDate}</span>
+                <span className="card--date">{date}</span>
                 <p className="card--description">{props.item.description}</p>
             </div>
         </div>

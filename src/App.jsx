@@ -6,11 +6,12 @@ import data from "./data"
 import './App.css'
 
 export default function App() {
-    const cards = data.map(item => {
+    const cards = data.map((item, index) => {
         return(
             <Card 
-                key={item.id}
+                key={index}
                 item={item}
+                isLast={index === data.length - 1}
             />
         )
     })
