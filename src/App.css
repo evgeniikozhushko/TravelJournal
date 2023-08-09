@@ -138,7 +138,7 @@ p {
 /* Media queries by ChatGPT*/
 
 /* Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
   #root {
     width: 100%;
     padding: 2rem;
@@ -157,53 +157,38 @@ p {
     font-size: 1.5rem;
   }
   .card--stats {
-    max-width: 280px;
+    width: 80%;
     margin: 0 auto;
   }
 }
 
+@media (max-width: 767px) {
+  .app--container {
+    display: flex;
+    flex-direction: column;
+  }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  #root {
-    width: 70%;
-    padding: 3rem;
-  }
   .card--image {
-    width: 100px;
-    height: 134px;
+    margin: 0 auto 1.5rem;
+    order: -1; /* Placing the card--image above other content */
   }
+
   .card--stats {
-    max-width: 280px;
+    max-width: none;
   }
-}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #root {
-    width: 60%;
+  .card--title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
-  .card--image {
-    width: 100px;
-    height: 134px;
-  }
-  .navbar--container {
-    max-height: 70px;
-  }
-  .main--container {
-    max-height: 800px;
-  }
-}
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  #root {
-    width: 50%;
+  .card--description {
+    font-size: 0.8rem;
   }
-  .navbar--container {
-    max-height: 80px;
-  }
-  .main--container {
-    max-height: 900px;
+
+  .card--location,
+  .card--url,
+  .card--date {
+    font-size: 0.6rem;
   }
 }
