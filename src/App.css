@@ -69,6 +69,17 @@ p {
   background-color: #313131;
   max-height: 704px;
   /* box-shadow: 0 0 1em #00000022; */
+  /* border-bottom: .5px solid rgb(249, 249, 249); */
+}
+
+.main--container--hr {
+  width: 90%;
+  /* background-color: #313131; */
+  margin: 0 auto;
+  border: 0;
+  height: 0;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+  border-bottom: .2px solid rgba(255, 255, 255, 0.3);
 }
 
 .main--container:first-child {
